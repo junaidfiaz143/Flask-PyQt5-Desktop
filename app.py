@@ -18,7 +18,7 @@ class MyApp(QWidget):
 		msg_box.setIcon(QMessageBox.Warning)
 		msg_box.setWindowTitle("Alert")
 		msg_box.setText("Are you sure you want to exit the program?")
-		# msg_box.setWindowIcon(QIcon("resources/icons/xray.ico"))
+		# msg_box.setWindowIcon(QIcon("resources/icons/app.ico"))
 		msg_box.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
 
 		retval = msg_box.exec_()
@@ -32,7 +32,7 @@ class MyApp(QWidget):
 
 		self.web = QWebEngineView()
 		self.web.setWindowTitle("Trello")
-		# self.web.setWindowIcon(QIcon("resources/icons/xray.ico"))
+		# self.web.setWindowIcon(QIcon("resources/icons/app.ico"))
 		self.web.load(QUrl("https://trello.com/"))
 		self.web.showMaximized()
 		self.web.setContextMenuPolicy(Qt.NoContextMenu)
