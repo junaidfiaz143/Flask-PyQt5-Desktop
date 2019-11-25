@@ -2,4 +2,4 @@
 
 "python" "app.py"
 
-pause
+exit

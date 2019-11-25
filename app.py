@@ -1,4 +1,5 @@
 import sys
+import subprocess
 from PyQt5.QtWidgets import QApplication, QWidget, QMessageBox
 from PyQt5.QtGui import QCursor
 from PyQt5.QtGui import QIcon
@@ -48,7 +49,7 @@ def hide_console():
 		import win32gui, win32con
 
 		cmd_terminal = win32gui.GetForegroundWindow()
-		win32gui.ShowWindow(cmd_terminal , win32con.SW_HIDE)
+		win32gui.ShowWindow(cmd_terminal , win32con.SW_HIDE)		
 
 if __name__ == '__main__':
 	hide_console()
